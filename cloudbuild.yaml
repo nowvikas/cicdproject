@@ -33,5 +33,5 @@ steps:
       - 'us-east1-docker.pkg.dev/my-project-4-496619/vikasdockerregistry/myapp:$BUILD_ID'
       
 images:
-  - 'us-east1-docker.pkg.dev/openwriteup/cicd/myapp:$BUILD_ID'
+  - 'us-east1-docker.pkg.dev/my-project-4-496619/vikasdockerregistry/myapp:$BUILD_ID'
 logsBucket: "gs://lab1-static-site-vikas"
