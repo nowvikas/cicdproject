@@ -24,13 +24,13 @@ steps:
     args: 
       - 'build'
       - '-t'
-      - 'us-central1-docker.pkg.dev/oval-turbine-495504-h2/myimage/myapp:$BUILD_ID'
+      - 'us-east1-docker.pkg.dev/my-project-4-496619/vikasdockerregistry/myimage/myapp:$BUILD_ID'
       - '.'
   # Step 4: Push Docker image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: 
       - 'push'
-      - 'us-central1-docker.pkg.dev/oval-turbine-495504-h2/myimage/myapp:$BUILD_ID'
+      - 'us-east1-docker.pkg.dev/my-project-4-496619/vikasdockerregistry/myimage/myapp:$BUILD_ID'
       
 images:
   - 'us-east1-docker.pkg.dev/openwriteup/cicd/myapp:$BUILD_ID'
